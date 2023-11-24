@@ -19,19 +19,30 @@
 		"nodejs",
 		"nodejs"
 	],
-	"author": "sondn",
+	"author": "SonZinDev",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/sondnpt00343/nodejs_blog/issues"
+		"url": "https://github.com/hongsonjs/nodejs_blog/issues"
 	},
-	"homepage": "https://github.com/sondnpt00343/nodejs_blog#readme",
+	"homepage": "https://github.com/hongsonjs/nodejs_blog#readme",
+	"lint-staged": {
+		"src/**/*.{js,json,scss}": "prettier --single-quote --tab-width 4 --trailing-comma all --write"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
 	"dependencies": {
 		"express": "^4.17.1",
 		"express-handlebars": "^5.1.0"
 	},
 	"devDependencies": {
+		"husky": "^8.0.3",
+		"lint-staged": "^15.1.0",
 		"morgan": "^1.10.0",
 		"node-sass": "^9.0.0",
-		"nodemon": "^2.0.4"
+		"nodemon": "^2.0.4",
+		"prettier": "^3.1.0"
 	}
 }
