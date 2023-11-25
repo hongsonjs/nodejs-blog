@@ -27,7 +27,8 @@
 	"homepage": "https://github.com/hongsonjs/nodejs_blog#readme",
 	"dependencies": {
 		"express": "^4.17.1",
-		"express-handlebars": "^5.1.0"
+		"express-handlebars": "^5.1.0",
+		"mongoose": "^8.0.1"
 	},
 	"devDependencies": {
 		"morgan": "^1.10.0",
